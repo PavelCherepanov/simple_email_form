@@ -21,23 +21,25 @@
 		}
 
 		if ($error != ""){
-			$error = '<div class="alert alert-danger" role="alert"> <p>У вас ошибка:</p>' . $error . '</div>';
+			$error = '<div class="alert alert-danger" role="alert"><p>У вас ошибка:</p>' . $error . '</div>';
 		} else{
-		// 	$emailto = $_POST["email"];
-		// 	$subject = $_POST["subject"];
-		// 	$text = $_POST["text_mess"];
-		// 	$headers = "From: ".$_POST["email"];
+			$emailto = $_POST["email"];
+			$subject = $_POST["subject"];
+			$text = $_POST["text_mess"];
+			$headers = "From: ".$_POST["email"];
 
-		// 	if (mail($emailTo, $subject, $text, $headers)){
-		// 		$successMessage = '<div class="alert alert-success" role="alert"><p>Ваше сообщение было отправлено</p></div>';
-		// 	} else {
-		// 		$error = '<div class="alert alert-danger" role="alert"><p>Ваше сообщение не было отправлено</p></div>';
-		// 	}
-		// }
+			if (mail($emailTo, $subject, $text, $headers)){
+				$successMessage = '<div class="alert alert-success" role="alert"><p>Ваше сообщение было отправлено</p></div>';
+			} else {
+				$error = '<div class="alert alert-danger" role="alert"><p>Ваше сообщение не было отправлено</p></div>';
+			}
+		}
 
 
 
 	}
+
+
 //pavelk.cherepanov@gmail.com
 ?>
 
