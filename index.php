@@ -40,7 +40,7 @@
 	}
 
 
-//pavelk.cherepanov@gmail.com
+
 ?>
 
 
